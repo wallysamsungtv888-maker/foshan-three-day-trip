@@ -1,0 +1,246 @@
+<svg xmlns='http://www.w3.org/2000/svg' class="ov-art" id="art-overview" viewBox="0 0 900 300" role="img" aria-label="三日行程總覽全景：第一日西樵山同千古情夜色，第二日祖廟同嶺南天地，第三日萬象天地後回港。圖為精細示意。"><style>
+      .lbl{font-family:"Noto Sans CJK HK","Noto Sans CJK TC",sans-serif;font-weight:700;paint-order:stroke;stroke:#fff;stroke-width:3.5px;stroke-linejoin:round;fill:#2A1C14}
+      .steam{animation:steam 3.8s ease-in-out infinite}
+      .twinkle{animation:shim 2.6s ease-in-out infinite}
+      @keyframes steam{0%{transform:translateY(4px);opacity:0}40%{opacity:.8}100%{transform:translateY(-16px);opacity:0}}
+      @keyframes shim{0%,100%{opacity:.28}50%{opacity:.9}}
+      @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+    </style>
+
+  <defs>
+    <filter id="o-sh" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="1.2" dy="2" stdDeviation="1.8" flood-color="#2A1C14" flood-opacity=".28"/>
+    </filter>
+    <filter id="o-soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <pattern id="o-tile" width="8" height="5" patternUnits="userSpaceOnUse">
+      <path d="M0 5 Q4 0 8 5" fill="none" stroke="#0B3A32" stroke-width=".55" opacity=".55"/>
+    </pattern>
+    <pattern id="o-tilehi" width="8" height="5" patternUnits="userSpaceOnUse">
+      <path d="M0 5 Q4 0 8 5" fill="none" stroke="#4EBfa0" stroke-width=".4" opacity=".28"/>
+    </pattern>
+    <pattern id="o-brick" width="14" height="8" patternUnits="userSpaceOnUse">
+      <rect width="14" height="8" fill="#C45A42"/>
+      <path d="M0 8h14M0 4h14M7 0v4M0 4v4M14 4v4" fill="none" stroke="#6A2A22" stroke-width=".45" opacity=".7"/>
+    </pattern>
+    <pattern id="o-gbrick" width="12" height="7" patternUnits="userSpaceOnUse">
+      <rect width="12" height="7" fill="#8A8E86"/>
+      <path d="M0 7h12M0 3.5h12M6 0v3.5M0 3.5v3.5" fill="none" stroke="#5A5E56" stroke-width=".4" opacity=".75"/>
+    </pattern>
+    <pattern id="o-rbrick" width="12" height="7" patternUnits="userSpaceOnUse">
+      <rect width="12" height="7" fill="#B5523E"/>
+      <path d="M0 7h12M0 3.5h12M6 0v3.5M0 3.5v3.5" fill="none" stroke="#6A2A22" stroke-width=".4" opacity=".75"/>
+    </pattern>
+    <pattern id="o-stone" width="22" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 12h22M11 0v12M0 6h22" fill="none" stroke="#8A7348" stroke-width=".45" opacity=".4"/>
+    </pattern>
+    <pattern id="o-leaf" width="16" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="1.6" fill="#1E4A2E" opacity=".35"/>
+      <circle cx="11" cy="8" r="1.3" fill="#2A5A38" opacity=".3"/>
+      <circle cx="13" cy="3" r="1.1" fill="#163820" opacity=".28"/>
+    </pattern>
+    <linearGradient id="o-roof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4AAF90"/><stop offset=".4" stop-color="#1F6B5A"/><stop offset="1" stop-color="#123F38"/>
+    </linearGradient>
+    <linearGradient id="o-wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6DEA0"/><stop offset="1" stop-color="#D4A24A"/>
+    </linearGradient>
+    <linearGradient id="o-col" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7A1A14"/><stop offset=".45" stop-color="#C4452D"/><stop offset="1" stop-color="#5A1210"/>
+    </linearGradient>
+  </defs>
+
+  <linearGradient id="o-bg" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#F6C992"/><stop offset=".5" stop-color="#F3E1C4"/><stop offset="1" stop-color="#D7E4EE"/>
+  </linearGradient>
+  <rect width="900" height="300" fill="url(#o-bg)"/>
+  <path d="M300 10 v280" stroke="#C9A25A" stroke-width="1.6" stroke-dasharray="5 7"/>
+  <path d="M600 10 v280" stroke="#C9A25A" stroke-width="1.6" stroke-dasharray="5 7"/>
+
+  <!-- DAY 1 Xiqiao mountains + theatre night corner -->
+  <g>
+    <path d="M0 0h300v300H0z" fill="#F6C992"/>
+    <path d="M-8 150 C30 110 60 130 90 100 C120 74 150 110 190 88 C230 66 260 100 308 80 V300 H-8z" fill="#C3D4C4"/>
+    <path d="M-8 176 C40 140 80 160 120 140 C160 122 190 160 230 144 C260 132 290 154 308 146 V300 H-8z" fill="#7FA88A"/>
+    <path d="M-8 176 C40 140 80 160 120 140 C160 122 190 160 230 144 C260 132 290 154 308 146 V300 H-8z" fill="url(#o-leaf)" opacity=".45"/>
+    <path d="M-8 220 C50 196 100 214 160 200 C210 188 250 214 308 204 V300 H-8z" fill="#4E7A58"/>
+    <!-- small wok-ear theatre miniature -->
+    <g transform="translate(150 148)">
+      <path d="M8 48 C8 16 24 2 40 14 C48 20 52 32 52 48" fill="#3A2A28"/>
+      <path d="M96 48 C96 16 80 2 64 14 C56 20 52 32 52 48" fill="#3A2A28"/>
+      <path d="M16 46 h72 l6 10 H12z" fill="url(#o-roof)"/>
+      <rect x="18" y="56" width="70" height="24" fill="#4A2038"/>
+      <path d="M36 80 v-14 a16 12 0 0 1 32 0 v14z" fill="#F8D48A" opacity=".6"/>
+    </g>
+    <g transform="translate(30 180) scale(.7)"><g transform="translate(0 0) scale(0.7)">
+      <ellipse cx="40" cy="8" rx="70" ry="36" fill="#2F5A3A"/>
+      <ellipse cx="8" cy="16" rx="40" ry="28" fill="#3A6A44"/>
+      <ellipse cx="70" cy="14" rx="38" ry="26" fill="#274A32"/>
+      <ellipse cx="40" cy="8" rx="70" ry="36" fill="url(#o-leaf)"/>
+      <path d="M40 20 C42 70 44 110 46 160" fill="none" stroke="#4A3020" stroke-width="14" stroke-linecap="round"/>
+      <path d="M40 20 C42 70 44 110 46 160" fill="none" stroke="#6A4A28" stroke-width="7" stroke-linecap="round"/>
+      <path d="M36 50 C10 100 0 130  -6 160" fill="none" stroke="#4A3020" stroke-width="6" stroke-linecap="round"/>
+      <path d="M50 46 C80 90 90 120 96 160" fill="none" stroke="#4A3020" stroke-width="6" stroke-linecap="round"/>
+      <g fill="none" stroke="#5A3A22" stroke-width="1.8" stroke-linecap="round" opacity=".85">
+        <path d="M16 6 C14 50 12 100 10 150"/>
+        <path d="M28 0 C26 55 25 100 24 150"/>
+        <path d="M58 2 C60 50 62 100 64 150"/>
+      </g>
+    </g></g>
+    <!-- tiny lion -->
+    <g transform="translate(40 230) scale(.55)">
+      <path d="M20 40 C16 16 40 8 58 28 C70 44 50 70 28 64z" fill="#1F7A4A" stroke="#163820" stroke-width="2"/>
+      <circle cx="24" cy="28" r="9" fill="#F2C2A0"/><circle cx="22" cy="26" r="2" fill="#1A120C"/>
+    </g>
+    <path d="M0 268 h300 v32 H0z" fill="#C4B48A"/>
+    <text x="150" y="28" text-anchor="middle" font-size="20" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">第一日・西樵</text>
+    <text x="150" y="290" text-anchor="middle" font-size="16" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">千古情演出</text>
+  </g>
+
+  <!-- DAY 2 Zumiao + Lingnan streets -->
+  <g transform="translate(300 0)">
+    <path d="M0 0h300v300H0z" fill="#F3E1C4"/>
+    <path d="M0 150 C40 130 80 146 140 128 S240 146 300 132 V300 H0z" fill="#C9D8C4"/>
+    <!-- temple roofs -->
+    <g transform="translate(20 70)">
+      <path d="M20 40 h160 l12 16 H10z" fill="url(#o-roof)"/>
+      <path d="M20 40 h160 l12 16 H10z" fill="url(#o-tile)"/>
+      <path d="M14 40 Q100 22 186 40" fill="none" stroke="#0E3F38" stroke-width="5"/>
+      <g transform="translate(16 26) scale(1,1)">
+      <path d="M0 10 C8 -2 22 2 28 12 C16 8 10 14 0 10z" fill="#C4452D" stroke="#5A2018" stroke-width=".8"/>
+      <path d="M18 4 C22 -6 30 -4 28 6" fill="#2E6B8A" stroke="#1A3A4A" stroke-width=".6"/>
+      <circle cx="22" cy="7" r="1.5" fill="#FFE38A"/>
+      <path d="M26 6l7-7" stroke="#C4452D" stroke-width="1.6" stroke-linecap="round"/>
+    </g><g transform="translate(184 26) scale(-1,1)">
+      <path d="M0 10 C8 -2 22 2 28 12 C16 8 10 14 0 10z" fill="#C4452D" stroke="#5A2018" stroke-width=".8"/>
+      <path d="M18 4 C22 -6 30 -4 28 6" fill="#2E6B8A" stroke="#1A3A4A" stroke-width=".6"/>
+      <circle cx="22" cy="7" r="1.5" fill="#FFE38A"/>
+      <path d="M26 6l7-7" stroke="#C4452D" stroke-width="1.6" stroke-linecap="round"/>
+    </g>
+      <g transform="translate(40 20) scale(.85)"><g transform="translate(0 0) scale(1,1)">
+      <path d="M0 16 C0 8 3 4 6 4 C9 4 11 8 11 16 L9 16 8 10 3 10 2 16z" fill="#C4452D" stroke="#4A2018" stroke-width=".4"/>
+      <circle cx="5.5" cy="3.2" r="2.1" fill="#E8C4A0" stroke="#8A6A50" stroke-width=".35"/>
+      <path d="M3.6 2.6h3.6" stroke="#2A1C14" stroke-width=".35"/>
+      <path d="M4.2 3.6c.8.7 2 .7 2.8 0" fill="none" stroke="#6A3A28" stroke-width=".3"/>
+      <path d="M2 6h2M9 6h2" stroke="#C4452D" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M3.2 0.2h5l-1 2h-3z" fill="#E2B13C" stroke="#6A4A10" stroke-width=".3"/>
+    </g><g transform="translate(20 0) scale(1,1)">
+      <path d="M0 16 C0 8 3 4 6 4 C9 4 11 8 11 16 L9 16 8 10 3 10 2 16z" fill="#2E6B8A" stroke="#4A2018" stroke-width=".4"/>
+      <circle cx="5.5" cy="3.2" r="2.1" fill="#E8C4A0" stroke="#8A6A50" stroke-width=".35"/>
+      <path d="M3.6 2.6h3.6" stroke="#2A1C14" stroke-width=".35"/>
+      <path d="M4.2 3.6c.8.7 2 .7 2.8 0" fill="none" stroke="#6A3A28" stroke-width=".3"/>
+      <path d="M2 6h2M9 6h2" stroke="#2E6B8A" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M3.2 0.2h5l-1 2h-3z" fill="#E2B13C" stroke="#6A4A10" stroke-width=".3"/>
+    </g><g transform="translate(40 0) scale(1,1)">
+      <path d="M0 16 C0 8 3 4 6 4 C9 4 11 8 11 16 L9 16 8 10 3 10 2 16z" fill="#D4A017" stroke="#4A2018" stroke-width=".4"/>
+      <circle cx="5.5" cy="3.2" r="2.1" fill="#E8C4A0" stroke="#8A6A50" stroke-width=".35"/>
+      <path d="M3.6 2.6h3.6" stroke="#2A1C14" stroke-width=".35"/>
+      <path d="M4.2 3.6c.8.7 2 .7 2.8 0" fill="none" stroke="#6A3A28" stroke-width=".3"/>
+      <path d="M2 6h2M9 6h2" stroke="#D4A017" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M3.2 0.2h5l-1 2h-3z" fill="#E2B13C" stroke="#6A4A10" stroke-width=".3"/>
+    </g><g transform="translate(60 0) scale(1,1)">
+      <path d="M0 16 C0 8 3 4 6 4 C9 4 11 8 11 16 L9 16 8 10 3 10 2 16z" fill="#1F6B5A" stroke="#4A2018" stroke-width=".4"/>
+      <circle cx="5.5" cy="3.2" r="2.1" fill="#E8C4A0" stroke="#8A6A50" stroke-width=".35"/>
+      <path d="M3.6 2.6h3.6" stroke="#2A1C14" stroke-width=".35"/>
+      <path d="M4.2 3.6c.8.7 2 .7 2.8 0" fill="none" stroke="#6A3A28" stroke-width=".3"/>
+      <path d="M2 6h2M9 6h2" stroke="#1F6B5A" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M3.2 0.2h5l-1 2h-3z" fill="#E2B13C" stroke="#6A4A10" stroke-width=".3"/>
+    </g><g transform="translate(80 0) scale(1,1)">
+      <path d="M0 16 C0 8 3 4 6 4 C9 4 11 8 11 16 L9 16 8 10 3 10 2 16z" fill="#C4452D" stroke="#4A2018" stroke-width=".4"/>
+      <circle cx="5.5" cy="3.2" r="2.1" fill="#E8C4A0" stroke="#8A6A50" stroke-width=".35"/>
+      <path d="M3.6 2.6h3.6" stroke="#2A1C14" stroke-width=".35"/>
+      <path d="M4.2 3.6c.8.7 2 .7 2.8 0" fill="none" stroke="#6A3A28" stroke-width=".3"/>
+      <path d="M2 6h2M9 6h2" stroke="#C4452D" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M3.2 0.2h5l-1 2h-3z" fill="#E2B13C" stroke="#6A4A10" stroke-width=".3"/>
+    </g></g>
+      <rect x="24" y="56" width="152" height="36" fill="url(#o-wall)" stroke="#8A6A28"/>
+      <g fill="#3A1A12"><rect x="44" y="66" width="22" height="26"/><rect x="130" y="66" width="22" height="26"/></g>
+    </g>
+    <!-- clock tower miniature -->
+    <g transform="translate(196 86)">
+      <rect x="10" y="30" width="36" height="80" fill="#B5523E"/>
+      <rect x="10" y="30" width="36" height="80" fill="url(#o-rbrick)"/>
+      <path d="M6 18 h44 L28 2 6 18z" fill="url(#o-roof)"/>
+      <circle cx="28" cy="52" r="10" fill="#F8E6C8" stroke="#5A2018" stroke-width="1.4"/>
+      <path d="M28 52 L28 45M28 52 L34 52" stroke="#2A1C14" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+    <!-- street + lanterns + stall steam -->
+    <path d="M0 210 h300 v90 H0z" fill="#C4B48A"/>
+    <path d="M0 210 h300 v90 H0z" fill="url(#o-stone)" opacity=".7"/>
+    <g class="twinkle" fill="#E24A2A">
+      <ellipse cx="40" cy="200" rx="5" ry="7"/><ellipse cx="70" cy="200" rx="5" ry="7"/><ellipse cx="100" cy="200" rx="5" ry="7"/>
+    </g>
+    <path d="M200 220 h60 l-4 10 H206z" fill="#C4452D"/>
+    <rect x="210" y="230" width="44" height="16" fill="#5A3A28"/>
+    <path class="steam" d="M228 218c0-10 8-10 8-18" fill="none" stroke="#ddd" stroke-width="1.8" stroke-linecap="round"/>
+    <g transform="translate(80 268) scale(0.85)">
+      <circle cx="0" cy="-22" r="4.2" fill="#F2C2A0" stroke="#6A4A38" stroke-width=".4"/>
+      <path d="M-3.2-24.2h6.2" fill="#2A1C14" stroke="#2A1C14" stroke-width="2" stroke-linecap="round"/>
+      <path d="M-5-17 h10 l3 16 h-16z" fill="#6A3A2A"/>
+      <path d="M-5-12 l-6 10" stroke="#6A3A2A" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M5-12 l6 9" stroke="#6A3A2A" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M-4 0 v12M4 0 v12" stroke="#2A1C14" stroke-width="2.4" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(110 272) scale(0.8)">
+      <circle cx="0" cy="-22" r="4.2" fill="#F2C2A0" stroke="#6A4A38" stroke-width=".4"/>
+      <path d="M-3.2-24.2h6.2" fill="#2A1C14" stroke="#2A1C14" stroke-width="2" stroke-linecap="round"/>
+      <path d="M-5-17 h10 l3 16 h-16z" fill="#E8C97A"/>
+      <path d="M-5-12 l-6 10" stroke="#E8C97A" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M5-12 l6 9" stroke="#E8C97A" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M-4 0 v12M4 0 v12" stroke="#2A1C14" stroke-width="2.4" stroke-linecap="round"/>
+    </g>
+    <text x="150" y="28" text-anchor="middle" font-size="20" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">第二日・禪城</text>
+    <text x="150" y="290" text-anchor="middle" font-size="16" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">祖廟・夜市</text>
+  </g>
+
+  <!-- DAY 3 MixC modern mall + coach home -->
+  <g transform="translate(600 0)">
+    <path d="M0 0h300v300H0z" fill="#D7E4EE"/>
+    <path d="M0 160 C40 140 90 150 140 136 S230 150 300 140 V300 H0z" fill="#B7C9C4"/>
+    <!-- MixC-like glass volumes + terrace garden -->
+    <g transform="translate(30 70)" filter="url(#o-sh)">
+      <rect x="10" y="40" width="50" height="110" fill="#7AA8B0" stroke="#3A5A60" stroke-width="1"/>
+      <rect x="64" y="16" width="70" height="134" fill="#5E8A96" stroke="#3A5A60" stroke-width="1"/>
+      <rect x="138" y="36" width="56" height="114" fill="#8FB8B0" stroke="#3A5A60" stroke-width="1"/>
+      <g fill="#E8F4F4" opacity=".45">
+        <rect x="18" y="50" width="12" height="8"/><rect x="18" y="66" width="12" height="8"/><rect x="18" y="82" width="12" height="8"/><rect x="18" y="98" width="12" height="8"/><rect x="18" y="114" width="12" height="8"/><rect x="34" y="50" width="12" height="8"/><rect x="34" y="66" width="12" height="8"/><rect x="34" y="82" width="12" height="8"/><rect x="34" y="98" width="12" height="8"/><rect x="34" y="114" width="12" height="8"/><rect x="74" y="50" width="12" height="8"/><rect x="74" y="66" width="12" height="8"/><rect x="74" y="82" width="12" height="8"/><rect x="74" y="98" width="12" height="8"/><rect x="74" y="114" width="12" height="8"/><rect x="92" y="50" width="12" height="8"/><rect x="92" y="66" width="12" height="8"/><rect x="92" y="82" width="12" height="8"/><rect x="92" y="98" width="12" height="8"/><rect x="92" y="114" width="12" height="8"/><rect x="108" y="50" width="12" height="8"/><rect x="108" y="66" width="12" height="8"/><rect x="108" y="82" width="12" height="8"/><rect x="108" y="98" width="12" height="8"/><rect x="108" y="114" width="12" height="8"/><rect x="148" y="50" width="12" height="8"/><rect x="148" y="66" width="12" height="8"/><rect x="148" y="82" width="12" height="8"/><rect x="148" y="98" width="12" height="8"/><rect x="148" y="114" width="12" height="8"/><rect x="166" y="50" width="12" height="8"/><rect x="166" y="66" width="12" height="8"/><rect x="166" y="82" width="12" height="8"/><rect x="166" y="98" width="12" height="8"/><rect x="166" y="114" width="12" height="8"/>
+      </g>
+      <!-- rooftop garden -->
+      <rect x="68" y="8" width="62" height="10" fill="#5E8A6E"/>
+      <g fill="#2F5A3A">
+        <ellipse cx="80" cy="10" rx="6" ry="5"/><ellipse cx="100" cy="9" rx="7" ry="5"/><ellipse cx="118" cy="10" rx="6" ry="5"/>
+      </g>
+    </g>
+    <!-- coach bus heading home -->
+    <g transform="translate(40 196)">
+      <path d="M8 28 h150 a16 16 0 0 0 16-10 V8 H40 L8 20z" fill="#E24A2A" stroke="#8B1E16" stroke-width="1.3"/>
+      <rect x="48" y="10" width="36" height="16" rx="2" fill="#CDE8F0"/>
+      <rect x="92" y="10" width="36" height="16" rx="2" fill="#CDE8F0"/>
+      <rect x="132" y="10" width="24" height="16" rx="2" fill="#CDE8F0"/>
+      <circle cx="40" cy="36" r="9" fill="#2A1C14"/><circle cx="40" cy="36" r="4" fill="#888"/>
+      <circle cx="150" cy="36" r="9" fill="#2A1C14"/><circle cx="150" cy="36" r="4" fill="#888"/>
+    </g>
+    <!-- far water / evening hint -->
+    <path d="M0 250 h300 v50 H0z" fill="#9EC8C8" opacity=".65"/>
+    <path d="M0 250 h300" stroke="#7AA8B0" stroke-width="2"/>
+    <g transform="translate(220 248) scale(0.8)">
+      <circle cx="0" cy="-22" r="4.2" fill="#F2C2A0" stroke="#6A4A38" stroke-width=".4"/>
+      <path d="M-3.2-24.2h6.2" fill="#2A1C14" stroke="#2A1C14" stroke-width="2" stroke-linecap="round"/>
+      <path d="M-5-17 h10 l3 16 h-16z" fill="#3A5A6A"/>
+      <path d="M-5-12 l-6 10" stroke="#3A5A6A" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M5-12 l6 9" stroke="#3A5A6A" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M-4 0 v12M4 0 v12" stroke="#1A1A18" stroke-width="2.4" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(248 250) scale(0.75)">
+      <circle cx="0" cy="-22" r="4.2" fill="#F2C2A0" stroke="#6A4A38" stroke-width=".4"/>
+      <path d="M-3.2-24.2h6.2" fill="#2A1C14" stroke="#2A1C14" stroke-width="2" stroke-linecap="round"/>
+      <path d="M-5-17 h10 l3 16 h-16z" fill="#C4452D"/>
+      <path d="M-5-12 l-6 10" stroke="#C4452D" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M5-12 l6 9" stroke="#C4452D" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M-4 0 v12M4 0 v12" stroke="#1A1A18" stroke-width="2.4" stroke-linecap="round"/>
+    </g>
+    <text x="150" y="28" text-anchor="middle" font-size="20" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">第三日・回程</text>
+    <text x="150" y="290" text-anchor="middle" font-size="16" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">萬象天地・返港</text>
+  </g>
+</svg>

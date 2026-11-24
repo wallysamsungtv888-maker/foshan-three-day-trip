@@ -1,0 +1,193 @@
+<svg xmlns='http://www.w3.org/2000/svg' class="map" id="art-map" viewBox="0 0 400 800" role="img" aria-label="路線示意：香港在南，西樵在西，禪城在東。圖示相對方位，並非精確道路或距離。"><style>
+      .lbl{font-family:"Noto Sans CJK HK","Noto Sans CJK TC",sans-serif;font-weight:700;paint-order:stroke;stroke:#fff;stroke-width:3.5px;stroke-linejoin:round;fill:#2A1C14}
+      .steam{animation:steam 3.8s ease-in-out infinite}
+      .twinkle{animation:shim 2.6s ease-in-out infinite}
+      @keyframes steam{0%{transform:translateY(4px);opacity:0}40%{opacity:.8}100%{transform:translateY(-16px);opacity:0}}
+      @keyframes shim{0%,100%{opacity:.28}50%{opacity:.9}}
+      @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+    </style>
+
+  <defs>
+    <filter id="m-sh" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="1.2" dy="2" stdDeviation="1.8" flood-color="#2A1C14" flood-opacity=".28"/>
+    </filter>
+    <filter id="m-soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <pattern id="m-tile" width="8" height="5" patternUnits="userSpaceOnUse">
+      <path d="M0 5 Q4 0 8 5" fill="none" stroke="#0B3A32" stroke-width=".55" opacity=".55"/>
+    </pattern>
+    <pattern id="m-tilehi" width="8" height="5" patternUnits="userSpaceOnUse">
+      <path d="M0 5 Q4 0 8 5" fill="none" stroke="#4EBfa0" stroke-width=".4" opacity=".28"/>
+    </pattern>
+    <pattern id="m-brick" width="14" height="8" patternUnits="userSpaceOnUse">
+      <rect width="14" height="8" fill="#C45A42"/>
+      <path d="M0 8h14M0 4h14M7 0v4M0 4v4M14 4v4" fill="none" stroke="#6A2A22" stroke-width=".45" opacity=".7"/>
+    </pattern>
+    <pattern id="m-gbrick" width="12" height="7" patternUnits="userSpaceOnUse">
+      <rect width="12" height="7" fill="#8A8E86"/>
+      <path d="M0 7h12M0 3.5h12M6 0v3.5M0 3.5v3.5" fill="none" stroke="#5A5E56" stroke-width=".4" opacity=".75"/>
+    </pattern>
+    <pattern id="m-rbrick" width="12" height="7" patternUnits="userSpaceOnUse">
+      <rect width="12" height="7" fill="#B5523E"/>
+      <path d="M0 7h12M0 3.5h12M6 0v3.5M0 3.5v3.5" fill="none" stroke="#6A2A22" stroke-width=".4" opacity=".75"/>
+    </pattern>
+    <pattern id="m-stone" width="22" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 12h22M11 0v12M0 6h22" fill="none" stroke="#8A7348" stroke-width=".45" opacity=".4"/>
+    </pattern>
+    <pattern id="m-leaf" width="16" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="1.6" fill="#1E4A2E" opacity=".35"/>
+      <circle cx="11" cy="8" r="1.3" fill="#2A5A38" opacity=".3"/>
+      <circle cx="13" cy="3" r="1.1" fill="#163820" opacity=".28"/>
+    </pattern>
+    <linearGradient id="m-roof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4AAF90"/><stop offset=".4" stop-color="#1F6B5A"/><stop offset="1" stop-color="#123F38"/>
+    </linearGradient>
+    <linearGradient id="m-wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6DEA0"/><stop offset="1" stop-color="#D4A24A"/>
+    </linearGradient>
+    <linearGradient id="m-col" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7A1A14"/><stop offset=".45" stop-color="#C4452D"/><stop offset="1" stop-color="#5A1210"/>
+    </linearGradient>
+  </defs>
+
+  <linearGradient id="m-water" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#A9D0CE"/><stop offset="1" stop-color="#7EB0B0"/>
+  </linearGradient>
+  <linearGradient id="m-land" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#F3E1C4"/><stop offset="1" stop-color="#E2C898"/>
+  </linearGradient>
+  <pattern id="m-hill" width="28" height="18" patternUnits="userSpaceOnUse">
+    <path d="M0 18 L8 8 L16 18 M14 18 L22 10 L30 18" fill="none" stroke="#7FA88A" stroke-width="1" opacity=".45"/>
+  </pattern>
+  <pattern id="m-urban" width="16" height="16" patternUnits="userSpaceOnUse">
+    <rect x="2" y="3" width="5" height="8" fill="#C9A078" opacity=".28"/>
+    <rect x="9" y="5" width="5" height="7" fill="#A88A60" opacity=".22"/>
+  </pattern>
+  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+    <path d="M0 0 L10 5 L0 10 z" fill="#C4452D"/>
+  </marker>
+  <rect width="400" height="800" fill="url(#m-water)"/>
+  <!-- water ripples, unnamed 水道示意 -->
+  <g fill="none" stroke="#8FB8B4" stroke-width="1.3" opacity=".55">
+    <path d="M16 240q36 10 72 0t72 0"/><path d="M200 430q36 10 72 0t72 0"/>
+    <path d="M20 610q50 12 100 0t100 0"/>
+  </g>
+  <text x="200" y="236" text-anchor="middle" font-size="11" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">水道（示意）</text>
+  <text x="300" y="620" text-anchor="middle" font-size="11" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">水域（示意）</text>
+
+  <!-- Xiqiao west, hilly -->
+  <path d="M28 40 C90 14 210 16 286 52 C336 82 344 164 286 206 C214 248 46 234 26 152 C16 100 14 60 28 40z" fill="url(#m-land)" stroke="#8A6A40" stroke-width="2"/>
+  <path d="M28 40 C90 14 210 16 286 52 C336 82 344 164 286 206 C214 248 46 234 26 152 C16 100 14 60 28 40z" fill="url(#m-hill)"/>
+  <path d="M54 140 L90 84 L122 140z" fill="#7FA88A" stroke="#3E5A40" stroke-width="1.3"/>
+  <path d="M104 140 L140 86 L174 140z" fill="#5E8A6E" stroke="#3E5A40" stroke-width="1.3"/>
+  <path d="M70 148 L100 112 L128 148z" fill="#4E7A58" opacity=".85"/>
+  <text class="lbl" x="200" y="36" font-size="15" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">西樵（示意）</text>
+
+  <!-- Chancheng east of Xiqiao -->
+  <path d="M40 258 C124 222 284 222 352 264 C392 294 394 408 332 458 C258 512 48 500 30 386 C18 324 16 276 40 258z" fill="url(#m-land)" stroke="#8A6A40" stroke-width="2"/>
+  <path d="M40 258 C124 222 284 222 352 264 C392 294 394 408 332 458 C258 512 48 500 30 386 C18 324 16 276 40 258z" fill="url(#m-urban)"/>
+  <g transform="translate(168 292) scale(.9)">
+    <path d="M10 30h80l8 12H4z" fill="#1F6B5A"/>
+    <rect x="16" y="42" width="68" height="18" fill="#E8C97A" stroke="#8A6A28"/>
+  </g>
+  <text class="lbl" x="200" y="250" font-size="15" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">禪城（示意）</text>
+
+  <!-- HK south -->
+  <path d="M24 632 C90 608 160 610 200 622 S330 608 378 634 L370 756 L30 756 z" fill="url(#m-land)" stroke="#8A6A40" stroke-width="2"/>
+  <path d="M40 734 C100 720 180 724 220 728 S320 720 362 734" fill="#D7EBE3" opacity=".8"/>
+  <text class="lbl" x="200" y="784" font-size="15" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">香港（示意）</text>
+
+  <!-- title + compass -->
+  <text x="12" y="24" font-size="16" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">路線示意</text>
+  <g transform="translate(360 36)">
+    <circle r="18" fill="#FFF8EE" stroke="#2A1C14" stroke-width="1.3"/>
+    <path d="M0 -12 L4 2 L0 0 L-4 2z" fill="#C4452D"/>
+    <text y="-22" text-anchor="middle" font-size="11" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">北</text>
+  </g>
+
+  <!-- transit: bus HK to Xiqiao, taxi clusters, return bus -->
+  <path d="M120 656 C60 520 70 280 96 184" fill="none" stroke="#C4452D" stroke-width="5" stroke-linecap="round" marker-end="url(#arr)"/>
+  <path d="M200 184 C230 220 230 248 220 278" fill="none" stroke="#E2B13C" stroke-width="3.2" stroke-dasharray="6 5"/>
+  <path d="M96 168 C140 150 168 150 200 168" fill="none" stroke="#E2B13C" stroke-width="3" stroke-dasharray="6 5"/>
+  <path d="M200 168 C228 140 210 114 168 108" fill="none" stroke="#E2B13C" stroke-width="3" stroke-dasharray="6 5"/>
+  <path d="M200 168 C230 190 240 204 250 214" fill="none" stroke="#E2B13C" stroke-width="3" stroke-dasharray="6 5"/>
+  <path d="M118 330 C100 348 100 360 128 376" fill="none" stroke="#6E7B83" stroke-width="3" stroke-dasharray="2 5"/>
+  <path d="M118 330 C180 338 230 338 268 328" fill="none" stroke="#E2B13C" stroke-width="3" stroke-dasharray="6 5"/>
+  <path d="M118 330 C150 368 180 400 168 436" fill="none" stroke="#E2B13C" stroke-width="3" stroke-dasharray="6 5"/>
+  <path d="M168 436 C220 456 280 470 300 490" fill="none" stroke="#E2B13C" stroke-width="3" stroke-dasharray="6 5"/>
+  <path d="M268 328 C300 368 310 408 276 440" fill="none" stroke="#E2B13C" stroke-width="3" stroke-dasharray="6 5"/>
+  <path d="M276 440 C250 510 214 536 200 568" fill="none" stroke="#E2B13C" stroke-width="3" stroke-dasharray="6 5"/>
+  <path d="M200 584 C280 628 300 648 268 676" fill="none" stroke="#C4452D" stroke-width="5" stroke-linecap="round" marker-end="url(#arr)"/>
+  <g transform="translate(96 168)">
+    <circle r="16" fill="#C4452D" stroke="#2A1C14" stroke-width="2"/>
+    <text x="0" y="6" text-anchor="middle" fill="#fff" font-family="Noto Serif CJK HK, serif" font-size="16" font-weight="700">C</text>
+  </g>
+  <text class="lbl" x="96" y="198" text-anchor="middle" font-size="15" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">歡朋酒店</text>
+  <g transform="translate(200 168)">
+    <circle r="16" fill="#C4452D" stroke="#2A1C14" stroke-width="2"/>
+    <text x="0" y="6" text-anchor="middle" fill="#fff" font-family="Noto Serif CJK HK, serif" font-size="16" font-weight="700">D</text>
+  </g>
+  <text class="lbl" x="222" y="174" text-anchor="start" font-size="15" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">粵樵</text>
+  <g transform="translate(168 108)">
+    <circle r="16" fill="#C4452D" stroke="#2A1C14" stroke-width="2"/>
+    <text x="0" y="6" text-anchor="middle" fill="#fff" font-family="Noto Serif CJK HK, serif" font-size="16" font-weight="700">E</text>
+  </g>
+  <text class="lbl" x="190" y="114" text-anchor="start" font-size="15" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">千古情</text>
+  <g transform="translate(250 214)">
+    <circle r="16" fill="#C4452D" stroke="#2A1C14" stroke-width="2"/>
+    <text x="0" y="6" text-anchor="middle" fill="#fff" font-family="Noto Serif CJK HK, serif" font-size="16" font-weight="700">F</text>
+  </g>
+  <text class="lbl" x="228" y="220" text-anchor="end" font-size="15" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">恒邦廣場</text>
+  <g transform="translate(118 330)">
+    <circle r="16" fill="#C4452D" stroke="#2A1C14" stroke-width="2"/>
+    <text x="0" y="6" text-anchor="middle" fill="#fff" font-family="Noto Serif CJK HK, serif" font-size="16" font-weight="700">G</text>
+  </g>
+  <text class="lbl" x="96" y="336" text-anchor="end" font-size="15" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">康得思酒店</text>
+  <g transform="translate(128 376)">
+    <circle r="16" fill="#C4452D" stroke="#2A1C14" stroke-width="2"/>
+    <text x="0" y="6" text-anchor="middle" fill="#fff" font-family="Noto Serif CJK HK, serif" font-size="16" font-weight="700">H</text>
+  </g>
+  <text class="lbl" x="150" y="382" text-anchor="start" font-size="15" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">楊廷記</text>
+  <g transform="translate(268 328)">
+    <circle r="16" fill="#C4452D" stroke="#2A1C14" stroke-width="2"/>
+    <text x="0" y="6" text-anchor="middle" fill="#fff" font-family="Noto Serif CJK HK, serif" font-size="16" font-weight="700">I</text>
+  </g>
+  <text class="lbl" x="290" y="334" text-anchor="start" font-size="15" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">祖廟</text>
+  <g transform="translate(168 436)">
+    <circle r="16" fill="#C4452D" stroke="#2A1C14" stroke-width="2"/>
+    <text x="0" y="6" text-anchor="middle" fill="#fff" font-family="Noto Serif CJK HK, serif" font-size="16" font-weight="700">J</text>
+  </g>
+  <text class="lbl" x="146" y="442" text-anchor="end" font-size="15" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">百益桑拿雞</text>
+  <g transform="translate(300 490)">
+    <circle r="16" fill="#C4452D" stroke="#2A1C14" stroke-width="2"/>
+    <text x="0" y="6" text-anchor="middle" fill="#fff" font-family="Noto Serif CJK HK, serif" font-size="16" font-weight="700">K</text>
+  </g>
+  <text class="lbl" x="278" y="496" text-anchor="end" font-size="15" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">創意產業園</text>
+  <g transform="translate(276 440)">
+    <circle r="16" fill="#C4452D" stroke="#2A1C14" stroke-width="2"/>
+    <text x="0" y="6" text-anchor="middle" fill="#fff" font-family="Noto Serif CJK HK, serif" font-size="16" font-weight="700">L</text>
+  </g>
+  <text class="lbl" x="298" y="446" text-anchor="start" font-size="15" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">萬象天地</text>
+  <g transform="translate(200 568)">
+    <circle r="16" fill="#C4452D" stroke="#2A1C14" stroke-width="2"/>
+    <text x="0" y="6" text-anchor="middle" fill="#fff" font-family="Noto Serif CJK HK, serif" font-size="16" font-weight="700">M</text>
+  </g>
+  <text class="lbl" x="222" y="574" text-anchor="start" font-size="15" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">皇冠假日上車點</text>
+  <g transform="translate(86 678)">
+    <circle r="16" fill="#C4452D" stroke="#2A1C14" stroke-width="2"/>
+    <text x="0" y="6" text-anchor="middle" fill="#fff" font-family="Noto Serif CJK HK, serif" font-size="16" font-weight="700">B</text>
+  </g>
+  <text class="lbl" x="86" y="708" text-anchor="middle" font-size="15" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">荃灣</text>
+  <g transform="translate(168 678)">
+    <circle r="16" fill="#C4452D" stroke="#2A1C14" stroke-width="2"/>
+    <text x="0" y="6" text-anchor="middle" fill="#fff" font-family="Noto Serif CJK HK, serif" font-size="16" font-weight="700">A</text>
+  </g>
+  <text class="lbl" x="168" y="708" text-anchor="middle" font-size="15" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">大圍</text>
+  <g transform="translate(268 692)">
+    <circle r="16" fill="#1F6B5A" stroke="#2A1C14" stroke-width="2"/>
+    <text x="0" y="6" text-anchor="middle" fill="#fff" font-family="Noto Serif CJK HK, serif" font-size="16" font-weight="700">N</text>
+  </g>
+  <text class="lbl" x="290" y="698" text-anchor="start" font-size="15" font-family="Noto Sans CJK HK, Noto Sans CJK TC, PingFang HK, sans-serif" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round" fill="#2A1C14">綠楊新村</text>
+
+</svg>
